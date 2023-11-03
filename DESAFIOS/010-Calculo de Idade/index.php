@@ -10,9 +10,9 @@
 
 <body>
     <?php 
-    $anoNasc = $_GET['anoNasc'] ?? 2000;
-    $anoAtual = date("Y");
-    $ano = $_GET['ano'] ?? $anoAtual;
+        $anoNasc = $_GET['anoNasc'] ?? 2000;
+        $anoAtual = date("Y");
+        $ano = $_GET['ano'] ?? $anoAtual;
     ?>
     <main>
         <h2>Calculando sua Idade</h2>
@@ -28,8 +28,8 @@
     <section>
         <h2>Resultado</h2>
         <?php
-        $idadeFutura = $ano - $anoNasc;
-        echo "<p>Você vai ter <strong>$idadeFutura</strong> anos em <strong>$ano</strong>.</p>"
+            $idadeFutura = $ano - $anoNasc;
+            echo "<p>Você vai ter <strong>$idadeFutura</strong> anos em <strong>$ano</strong>.</p>"
         ?>
     </section>
 </body>
