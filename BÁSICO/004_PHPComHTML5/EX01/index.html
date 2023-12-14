@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>004: PHP com HTML5</title>
+		<link rel="stylesheet" href="../../style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Formulários</h1>
+		</header>
+		<main>
+			<form method="get" action="dados.php">
+				<label for="nome">Nome: </label>
+				<input type="text" name="nome" id="nome" />
+				<label for="ano_de_nascimento">Ano de nascimento:</label>
+				<input type="number" name="ano_de_nascimento" id="ano_de_nascimento"/>
+				<fieldset>
+                         <legend>Sexo</legend>
+                         <input type="radio" name="sexo" id="masculino" checked value="homem" />
+                         <label for="masculino">Masculino</label>
+                         <input type="radio" name="sexo" id="feminino" value="mulher" />
+                         <label for="feminino">Feminino</label>
+                    </fieldset>
+				<input type="submit" value="Enviar" />
+				<input type="reset" value="Limpar" />
+			</form>
+		</main>
+	</body>
+</html>

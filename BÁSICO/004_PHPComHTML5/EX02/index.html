@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>004: PHP com HTML5</title>
+		<link rel="stylesheet" href="../../../style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Formulários</h1>
+		</header>
+
+		<main>
+			<form method="post" action="dados.php">
+				<label for="texto">Digite um texto</label>
+				<input type="text" name="texto" id="texto" />
+				<fieldset>
+					<legend>Defina a estilização do texto</legend>
+					<label for="tamanho">Tamanho (px)</label>
+					<select type="number" name="tamanho" id="tamanho" placeholder="0.0">
+						<option value="1pt">1</option>
+						<option value="4pt">4</option>
+						<option value="8pt">8</option>
+						<option value="16pt">16</option>
+						<option value="32pt">32</option>
+						<option value="64pt">64</option>
+					</select>
+					<label for="cor">Cor</label>
+					<input type="color" name="cor" id="cor" />
+					<input type="submit" value="Enviar" />
+				</fieldset>
+			</form>
+		</main>
+	</body>
+</html>
