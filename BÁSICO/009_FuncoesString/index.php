@@ -68,10 +68,68 @@ $texto = join("#", $vetor); // ou implode
 print($texto);
 
 // Transforma código em caractere
-echo "\n".chr(67);
+echo "\n" . chr(67);
 
 // Transformando letra em código
-echo "\n".ord("C"); 
+echo "\n" . ord("C");
 
 //---------------------------------------------------------
+$nome = "RafaeL";
+// Minusculo
+echo "\n\nDEIXANDO TUDO EM MINÚSCULO";
+echo "\n" . strtolower($nome);
+
+// Maiusculo
+echo "\n\nDEIXANDO TUDO EM MAIÚSCULO";
+echo "\n" . strtoupper($nome);
+
+$nome = "rafael";
+// Primeira letra da string toda em maiuscula
+echo "\n\nCOLOCANDO A PRIMEIRA LETRA EM MAIUSCULA";
+echo "\n" . ucfirst($nome);
+
+$nome = "rafael santiago";
+// Colocando a primeira letra de cada palavra em maiuscula
+echo "\n\nCOLOCANDO A PRIMEIRA LETRA DE CADA PALAVRA EM MAIUSCULA";
+echo "\n" . ucwords($nome);
+
+// Imprimindo a String reversa
+echo "\n\nIMPRIMNDO A STRING REVERSA";
+echo "\n" . strrev($nome);
+
+// Imprimindo a suposta posição da palavra em um array
+$frase = "Estou aprendendo PHP";
+echo "\n\nIMPRIMINDO A SUPOSTA POSIÇÃO DA PALAVRA";
+echo "\n" . strpos($frase, "PHP");
+
+// "", só que ignorando a caixa de texto
+echo "\n" . stripos($frase, "php");
+
+// Contando palavras repetidas
+echo "\n\nCONTA REPETIÇÃO DE UMA PALAVRA";
+$frase .= " no Curso em Vídeo de PHP";
+echo "\n" . substr_count($frase, "PHP");
+
+// Pegando Caracteres De Uma Determinada Posição
+$site = "Curso em Vídeo";
+echo "\n\nPEGANDO CARACTERES DE UMA DETERMINADA POSIÇÃO";
+echo "\n" . substr($site, 0, 5); // Pega os caracteres entre a posição 0 e a posição 5 (sem incluir o 5)
+
+// Colocar caracteres em determinada posição
+echo "\n\nCOLOCAR CARACTERES EM DETERMINADA POSIÇÃO";
+$nome = "Santiago";
+echo "\n".str_pad($nome, 30, "#", STR_PAD_RIGHT); // Coloca 30 # a direita
+echo "\n".str_pad($nome, 30, "#", STR_PAD_LEFT); // "" esquerda
+
+// Gerando textos
+echo "\n\nGERANDO TEXTOS";
+echo "\n".str_repeat("oi ", 10); // Escrevendo "oi " dez vezes
+
+// Substituindo substrings (palavras)
+echo "\n\nSUBSTITUINDO SUBSTRINGS";
+$frase = "Gosto de estudar Matemática";
+$novaFrase = str_replace("Matemática", "PHP", $frase);
+echo "\n".$novaFrase;
+$novaFraseIgnorante = str_ireplace("matemática", "PHP", $frase);
+echo "\n".$novaFraseIgnorante;
 ?>
