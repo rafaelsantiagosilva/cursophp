@@ -10,7 +10,7 @@
 
 <body>
      <header>
-          <h1>Visibilidade de Objetos</h1>
+          <h1>Métodos Especiais</h1>
      </header>
 
      <main>
