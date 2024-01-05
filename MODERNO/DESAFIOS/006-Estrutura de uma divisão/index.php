@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 006: Estrutura de uma divisão</title>
+    <link rel="stylesheet" href="../../../style.css">
     <style>
         .container > div{
             width: 100px;
