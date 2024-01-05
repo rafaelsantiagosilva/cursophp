@@ -4,7 +4,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>02: Visibilidade de Objetos</title>
+     <title>03: Métodos Especiais</title>
      <link rel="stylesheet" href="../../style.css">
 </head>
 
